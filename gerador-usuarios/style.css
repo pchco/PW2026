@@ -1,0 +1,20 @@
+header {
+  background-color: blueviolet;
+  color: white;
+  text-align: center;
+  font-size: 20px;
+  padding: 2%;
+  font-family: "Franklin Gothic Ligth";
+}
+.formUser {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-top: 2%;
+  div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}

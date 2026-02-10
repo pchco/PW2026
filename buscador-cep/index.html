@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Buscador de CEPs</title>
+</head>
+<body>
+
+    <header>Buscador de CEPs</header>
+
+    <div class="container">
+
+        <div class="formSearch">
+            <label for="cep" style="display:none;">CEP</label>
+            <input id="cep" type="text" inputmode="numeric" placeholder="Digite o CEP">
+            <button onclick="searchCep()">Pesquisar</button>
+            <button onclick="limparCampos()">Limpar</button>
+        </div>
+
+        <div id="status"></div>
+
+        <div class="infoCep">            
+            <p><b>Logradouro:</b> <span id="rua"></span></p>
+            <p><b>Bairro:</b> <span id="bairro"></span></p>
+            <p><b>Localidade:</b> <span id="localidade"></span></p>
+            <p><b>Estado:</b> <span id="estado"></span></p>
+        </div>
+
+        <img id="imgCepOk" src="img/cep-ok.jpg" alt="emoji feliz de óculos ">
+        <img id="imgCepErro" src="img/cep-erro.webp" alt="emoji triste">
+
+    </div>
+
+    <footer class="footer">
+        Desenvolvido por Vitória Pacheco - 2026
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

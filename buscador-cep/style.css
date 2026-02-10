@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    box-sizing: border-box;
+    font-family: "Roboto";
+}
+
+/* estrutura geral */
+html, body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    background-color: #f4f6f8;
+}
+
+/* cabeçalho */
+header {
+    text-align: center;
+    font-size: 45px;
+    background-color: rgb(23, 114, 114);
+    color: white;
+    padding: 12px;
+}
+
+/* container central */
+.container {
+    flex: 1;
+    max-width: 500px;
+    margin: auto;
+    padding: 20px 15px;
+    text-align: center;
+}
+
+/* area pesquisa */
+.formSearch {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+}
+
+/* input */
+.formSearch input {
+    padding: 10px;
+    width: 100%;
+    max-width: 220px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+/* grupo dos botões */
+.grupoBotoes {
+    display: flex;
+    gap: 8px;
+}
+
+/* botões */
+.formSearch button {
+    padding: 10px 14px;
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+    background-color: rgb(23, 114, 114);
+    color: white;
+    font-weight: 500;
+}
+
+.formSearch button:hover {
+    opacity: 0.9;
+}
+
+/* caixa status */
+#status {
+    margin-top: 15px;
+    padding: 10px;
+    border-radius: 6px;
+    font-weight: bold;
+    display: none;
+}
+
+/* status cores */
+.sucesso {
+    background-color: #d4edda;
+    color: #155724;
+}
+
+.erro {
+    background-color: #f8d7da;
+    color: #721c24;
+}
+
+/* caixa infos CEP */
+.infoCep {
+    margin-top: 20px;
+    background-color: white;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    text-align: left;
+}
+
+.infoCep p {
+    margin: 18px 0;
+    word-break: break-word;
+}
+
+/* rodapé */
+.footer {
+    background-color: #222;
+    color: #fff;
+    text-align: center;
+    padding: 12px 0;
+    font-size: 14px;
+}
+
+/* imagem */
+#imgCepOk,
+#imgCepErro {
+    display: none;
+    max-width: 180px;
+    width: 100%;
+    margin: 15px auto 0 auto;
+}
+
+/* responsividade */
+@media (max-width: 480px) {
+
+    header {
+        font-size: 22px;
+        padding: 14px;
+    }
+
+    .container {
+        padding: 15px 10px;
+    }
+
+    .formSearch input {
+        max-width: none;
+    }
+
+    /* mantém os botões lado a lado no celular */
+    .grupoBotoes {
+        width: 100%;
+    }
+
+    .grupoBotoes button {
+        flex: 1;
+    }
+
+    .infoCep {
+        font-size: 15px;
+    }
+
+    .footer {
+        font-size: 13px;
+    }
+}
