@@ -1,26 +1,29 @@
 <!doctype html>
 <html lang="pt-br">
   <head>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+    </style>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Personagens Dragon Ball</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header>Personagens Dragon Ball</header>
+    <header>PERSONAGENS DE DRAGON BALL Z</header>
 
     <div class="formUser">
       <!-- Info do genero -->
       <div>
-        <span style="color: rgb(235, 86, 86)">Gênero</span>
+        <span class="tituloFiltro">Gênero</span>
         <input type="radio" name="g" checked /> Ambos
         <input type="radio" name="g" value="male" /> Homem
         <input type="radio" name="g" value="female" /> Mulher
       </div>
 
-      <!-- Info da nacionalidade -->
+      <!-- Info da raça -->
       <div>
-        <span style="color: rgb(235, 86, 86)">Raça</span>
+        <span class="tituloFiltro">Raça</span>
         <select id="race">
           <option value="">Todas</option>
           <option value="Human">Humano</option>
@@ -32,22 +35,10 @@
           <option value="Nucleico benigno">Kaiohshins</option>
           <option value="Unknown">Desconhecida</option>
         </select>
+
+        <button onclick="buscar()">Buscar Personagens</button>
       </div>
-
-      <!-- Info Quantidade -->
-      <!-- <div>
-        Quantidade
-        <select id="qt">
-          <option value="1">1</option>
-          <option value="2">2</option>
-          <option value="3">3</option>
-          <option value="4">4</option>
-        </select>
-      </div> -->
-      <button onclick="buscar()">Buscar Personagens</button>
     </div>
-
-    <hr />
 
     <div class="allUsers">
       <!-- <div class="user">
@@ -70,6 +61,13 @@
         </div>
       </div> -->
     </div>
+
+    <audio id="musica" autoplay loop>
+      <source src="audio-dbz.mp3" type="audio/mpeg" />
+    </audio>
+
+    <footer class="footer">Desenvolvido por Vitória Pacheco - 2026</footer>
+
     <script src="script.js"></script>
   </body>
 </html>

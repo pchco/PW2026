@@ -1,11 +1,9 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
-
 * {
   font-family: "Roboto";
 }
 
 header {
-  background-color: rgb(55, 65, 110);
+  background-color: rgb(238, 107, 0);
   color: white;
   text-align: center;
   font-size: 20px;
@@ -30,7 +28,7 @@ header {
 }
 
 .user {
-  /* background-color: rgb(187, 170, 148); */
+  background-color: rgb(250, 192, 224);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -67,4 +65,21 @@ header {
 
 img:hover {
   transform: scale(1.2);
+}
+
+.footer {
+    background-color: #222;
+    color: #fff;
+    text-align: center;
+    padding: 12px 0;
+    font-size: 14px;
+    margin-top: 30px;
+}
+
+.tituloFiltro{
+  background-color: rgb(0, 30, 128);
+  color: white;
+  padding: 4px 10px;
+  border-radius: 8px;
+  margin-right: 6px;
 }

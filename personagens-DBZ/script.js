@@ -1,3 +1,9 @@
+document.onclick = function(){
+  const musica = document.getElementById("musica");
+  musica.play();
+  document.onclick = null;
+}
+
 async function buscar() {
   let url = "https://dragonball-api.com/api/characters?limit=58";
 
