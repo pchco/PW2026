@@ -1,0 +1,70 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  font-family: "Roboto";
+}
+
+header {
+  background-color: rgb(55, 65, 110);
+  color: white;
+  text-align: center;
+  font-size: 20px;
+  padding: 3%;
+  font-family: "Franklin Gothic Light";
+}
+
+.formUser {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 10px;
+  margin-top: 2%;
+}
+
+.allUsers {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 15px;
+}
+
+.user {
+  /* background-color: rgb(187, 170, 148); */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  padding: 5px;
+  box-shadow: 0 0 5px black;
+  flex-basis: 200px;
+}
+
+#name {
+  font-size: 30px;
+  margin: 0;
+}
+
+#race-gender {
+  color: rgb(55, 65, 110);
+}
+
+.ki {
+  color: rgb(55, 65, 110);
+}
+
+.data {
+  padding: 5px;
+  margin-right: 10px;
+}
+
+.avatar img {
+  width: 100px;
+  height: 250px;
+  object-fit: contain;
+  transition: transform 0.2s; /* Animation */
+}
+
+img:hover {
+  transform: scale(1.2);
+}

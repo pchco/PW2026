@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personagens Dragon Ball</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>Personagens Dragon Ball</header>
+
+    <div class="formUser">
+      <!-- Info do genero -->
+      <div>
+        <span style="color: rgb(235, 86, 86)">Gênero</span>
+        <input type="radio" name="g" checked /> Ambos
+        <input type="radio" name="g" value="male" /> Homem
+        <input type="radio" name="g" value="female" /> Mulher
+      </div>
+
+      <!-- Info da nacionalidade -->
+      <div>
+        <span style="color: rgb(235, 86, 86)">Raça</span>
+        <select id="race">
+          <option value="">Todas</option>
+          <option value="Human">Humano</option>
+          <option value="Saiyan">Saiyajin</option>
+          <option value="Android">Android</option>
+          <option value="God">Deus</option>
+          <option value="Angel">Anjo</option>
+          <option value="Frieza Race">Raça Frieza</option>
+          <option value="Nucleico benigno">Kaiohshins</option>
+          <option value="Unknown">Desconhecida</option>
+        </select>
+      </div>
+
+      <!-- Info Quantidade -->
+      <!-- <div>
+        Quantidade
+        <select id="qt">
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+        </select>
+      </div> -->
+      <button onclick="buscar()">Buscar Personagens</button>
+    </div>
+
+    <hr />
+
+    <div class="allUsers">
+      <!-- <div class="user">
+        <div class="data">
+          <p>
+            <span id="name">Goku</span> <br />
+            <span id="race-gender">Saiyan - Male</span>
+          </p>
+          <p>
+            <span class="ki">Base KI:</span> <br />
+            <span>60000000</span>
+          </p>
+          <p>
+            <span class="ki">Total KI:</span> <br />
+            <span>60000000</span>
+          </p>
+        </div>
+        <div class="avatar">
+          <img src="https://dragonball-api.com/characters/goku_normal.webp" />
+        </div>
+      </div> -->
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
