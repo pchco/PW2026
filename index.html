@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Minha API</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Minha API do IFCE</h1>
+    <div class="cadastroAluno">
+      ID:<input id="idAluno" type="text"/> 
+      NOME:<input id="nomeAluno" type="text"/>
+      <button onclick="cadastrarAluno()">Cadastrar</button>
+      <button onclick="atualizarAluno()">Atualizar</button>
+    </div>
+    <hr />
+
+    <div class="todosAlunos"></div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
